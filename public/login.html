@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/forms.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <title>Login</title>
+  </head>
+  <body>
+    <section class="form-section">
+      <div class="form-container">
+        <div class="form-image"></div>
+        <div class="login-side">
+          <div class="form-heading">
+            <h3 class="form-title">Login</h3>
+            <p class="form-text">
+              By continuing, you agree to our User Agreement and Privacy Policy.
+            </p>
+          </div>
+          <div class="form-loginwith">
+            <button class="google"><i class="fab fa-google"></i> Continue with google</button>
+            <button class="apple"><i class="fab fa-apple"></i> Continue with apple</button>
+          </div>
+          <form class="login-form form">
+            <input
+              type="email"
+              name="email-address"
+              id="email-address"
+              placeholder="USERNAME"
+            />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="PASSWORD"
+            />
+            <button type="submit" class="form-btn">Log In</button>
+            <span class="forget-password"
+              >Forgot your username or password ?</span
+            >
+            <span class="new-account"
+              >New to Reddit? <a href="#">SIGN UP</a></span
+            >
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="js/dom.js"></script>
+  </body>
+</html>
