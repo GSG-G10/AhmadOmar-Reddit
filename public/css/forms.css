@@ -34,9 +34,22 @@ body {
   align-items: center;
   background-color: #fff;
   border-radius: 4px;
+  position: relative;
 }
 .form-side {
   padding: 35px;
+}
+.back-to-home {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  font-size: 22px;
+}
+.back-to-home a {
+  color: #000;
+}
+.back-to-home:hover a {
+  color: #0779d3;
 }
 .form-loginwith {
   display: flex;
@@ -174,9 +187,14 @@ body {
   .form-image {
     display: none;
   }
+  .back-to-home {
+    right: 20px;
+    top: 30px;
+  }
 }
 @media screen and (max-width: 650px) {
   .form-section .form-container {
     width: 80%;
   }
+  
 }
