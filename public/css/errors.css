@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: sans-serif;
+  background-color: #f1f2f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+h1,
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.section {
+  padding: 4rem 2rem;
+}
+
+.section.not-found .error {
+  font-size: 150px;
+  font-size: 150px;
+  color: #31495a;
+  text-shadow: 1px 1px 1px #0079d3, 2px 2px 1px #0079d3,
+    3px 3px 1px #0079d3, 4px 4px 1px #0079d3, 5px 5px 1px #0079d3,
+    6px 6px 1px #0079d3, 7px 7px 1px #0079d3, 8px 8px 1px #0079d3,
+    25px 25px 8px rgb(0 0 0 / 20%);
+}
+.section.server-error .error {
+  font-size: 150px;
+  font-size: 150px;
+  color: #6f4523;
+  text-shadow: 1px 1px 1px #D8721D, 2px 2px 1px #D8721D,
+    3px 3px 1px #D8721D, 4px 4px 1px #D8721D, 5px 5px 1px #D8721D,
+    6px 6px 1px #D8721D, 7px 7px 1px #D8721D, 8px 8px 1px #D8721D,
+    25px 25px 8px rgb(0 0 0 / 20%);
+}
+.page {
+  margin: 2rem 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1b2831;
+}
+
+.back-home {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0.75rem 1rem 0.6rem;
+  transition: all 0.2s linear;
+  border-radius: 30px;
+}
+
+.not-found .back-home {
+  border: 2px solid #0778d3;
+  color: #0778d3;
+}
+.not-found .back-home:hover {
+  background: #0778d3;
+  color: #ddd;
+}
+.server-error .back-home {
+  border: 2px solid #D8721D;
+  color: #D8721D;
+}
+.server-error .back-home:hover {
+  background: #D8721D;
+  color: #ddd;
+}
