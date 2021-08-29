@@ -14,6 +14,74 @@
     <title>Reddit - Dive into anything</title>
   </head>
   <body>
+    <header class="site-header">
+      <div class="site-logo">
+        <a href="#">
+          <img src="assets/Reddit-Logo.png" alt="Reddit Logo" />
+        </a>
+      </div>
+
+      <div class="content-filter hidden-public">
+        <div class="filter-title">
+          <i class="fas fa-home"></i>
+          <span>Home</span>
+        </div>
+        <i class="fas fa-angle-down"></i>
+      </div>
+
+      <div class="search-bar">
+        <i class="fas fa-search"></i>
+        <input
+          type="text"
+          class="input-search"
+          name="search-input"
+          placeholder="Search Reddit"
+        />
+      </div>
+
+      <div class="extra-icons hidden-public">
+        <div class="left-icons">
+          <img src="assets//icons/pupular.png" alt="pupular" />
+          <img src="assets//icons/all.png" alt="all" />
+          <img src="assets//icons/live.png" alt="live" />
+        </div>
+        <div class="right-icons">
+          <img src="assets//icons/caht.png" alt="caht" />
+          <img src="assets//icons/notification.png" alt="notification" />
+          <button class="create-post">
+            <img src="assets//icons/createpost.png" alt="create post" />
+          </button>
+        </div>
+      </div>
+
+      <div class="get-coins hidden-public">
+        <img src="assets/icons/coins.png" alt="get coins" />
+        <span>Get Coins</span>
+      </div>
+
+      <div class="user-id hidden-public">
+        <div class="user-info">
+          <div class="user-image">
+            <img src="assets/user.png" alt="user" />
+          </div>
+          <div class="user-meta">
+            <span class="user-name">Ahmad__Omar</span>
+            <span class="user-karma">1 karma</span>
+          </div>
+        </div>
+        <i class="fas fa-angle-down"></i>
+      </div>
+
+      <div class="login-signup__btns">
+        <a href="/login" class="login-btn">Log In</a>
+        <a href="/signup" class="signup-btn">Sign Up</a>
+      </div>
+
+      <div class="user-avatar">
+        <i class="far fa-user"></i>
+        <i class="fas fa-angle-down"></i>
+      </div>
+    </header>
     <script src="js/dom.js"></script>
   </body>
 </html>
