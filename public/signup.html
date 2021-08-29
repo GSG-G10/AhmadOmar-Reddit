@@ -11,15 +11,15 @@
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
-    <title>Login</title>
+    <title>Sign Up</title>
   </head>
   <body>
-    <section class="form-section login-section">
+    <section class="form-section signup-section">
       <div class="form-container">
         <div class="form-image"></div>
         <div class="login-side">
           <div class="form-heading">
-            <h3 class="form-title">Login</h3>
+            <h3 class="form-title">Sign up</h3>
             <p class="form-text">
               By continuing, you agree to our User Agreement and Privacy Policy.
             </p>
@@ -36,17 +36,27 @@
               placeholder="USERNAME"
             />
             <input
+              type="email"
+              name="email-address"
+              id="email-address"
+              placeholder="EMAIL ADDRESS"
+            />
+            <input
               type="password"
               name="password"
               id="password"
               placeholder="PASSWORD"
             />
-            <button type="submit" class="form-btn login-btn">Log In</button>
-            <span class="forget-password"
-              >Forgot your username or password ?</span
-            >
-            <span class="new-account"
-              >New to Reddit? <a href="#">SIGN UP</a></span
+            <input
+              type="password"
+              name="confirm-password"
+              id="confirm-password"
+              placeholder="CONFIRM PASSWORD"
+            />
+            <button type="submit" class="form-btn signup-btn">Sign up</button>
+            
+            <span class="already-redditor"
+              >Already a redditor? <a href="#">LOG IN</a></span
             >
           </form>
         </div>

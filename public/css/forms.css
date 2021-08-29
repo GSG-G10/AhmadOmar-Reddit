@@ -13,8 +13,14 @@ body {
 }
 .form-image {
   content: url('../assets/images/form-img.png');
+}
+.signup-section .form-image {
+  min-height: 675px;
+}
+.login-section .form-image {
   min-height: 605px;
 }
+
 .form-section {
   height: 100vh;
   display: flex;
@@ -135,14 +141,19 @@ body {
   display: block;
   margin: 14px 0 28px;
 }
-.new-account {
+.new-account, 
+.already-redditor {
   font-size: 13px;
   display: block;
 }
-.new-account a {
+.new-account a, 
+.already-redditor a {
   color: var(--secondaryColor);
   text-decoration: none;
   font-weight: 600;
+}
+.already-redditor {
+  margin-top: 14px;
 }
 
 /** Media query **/
