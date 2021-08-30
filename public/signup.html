@@ -29,7 +29,7 @@
             <button class="google"><i class="fab fa-google"></i> Continue with google</button>
             <button class="apple"><i class="fab fa-apple"></i> Continue with apple</button>
           </div>
-          <form class="signup-form form">
+          <form class="signup-form form" method="POST" action="/signup">
             <input
               type="text"
               name="username"
@@ -38,7 +38,7 @@
             />
             <input
               type="email"
-              name="email-address"
+              name="email_address"
               id="email-address"
               placeholder="EMAIL ADDRESS"
             />
@@ -50,12 +50,11 @@
             />
             <input
               type="password"
-              name="confirm-password"
-              id="confirm-password"
+              name="confirmpassword"
+              id="confirmpassword"
               placeholder="CONFIRM PASSWORD"
             />
             <button type="submit" class="form-btn signup-btn">Sign up</button>
-            
             <span class="already-redditor"
               >Already a redditor? <a href="/login">LOG IN</a></span
             >
@@ -63,6 +62,6 @@
         </div>
       </div>
     </section>
-    <script src="js/dom.js"></script>
+    <script src="js/signupValidation.js"></script>
   </body>
 </html>
