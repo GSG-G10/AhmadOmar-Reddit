@@ -15,7 +15,8 @@ body {
   content: url('../assets/images/form-img.png');
 }
 .signup-section .form-image {
-  min-height: 675px;
+  min-height: 770px;
+  width: 30%;
 }
 .login-section .form-image {
   min-height: 605px;
@@ -122,6 +123,7 @@ body {
   background-color: var(--secondaryColor);
   color: #fff;
   cursor: pointer;
+  margin-top: 12px;
 }
 .form-btn:hover {
   background-color: #228ddc;
@@ -136,7 +138,7 @@ body {
   border: 1px solid rgba(0,0,0,.1);
   border-radius: 4px;
   padding: 0px 16px;
-  margin-bottom: 12px;
+  margin-top: 12px;
   font-size: 14px;
 }
 .form input::placeholder {
@@ -145,7 +147,9 @@ body {
 .form input:focus {
   outline: 0;
 }
-.form input:focus, 
+.form input:focus {
+  border: 1px solid var(--secondaryColor) !important;
+}
 .form input:hover {
   border: 1px solid var(--secondaryColor);
 }
@@ -168,7 +172,15 @@ body {
 .already-redditor {
   margin-top: 14px;
 }
-
+.red-placeholder::placeholder {
+  color: red;
+}
+.error-message {
+  color: red;
+  font-size: 12px;
+  display: inline-block;
+  line-height: 1.5;
+}
 /** Media query **/
 @media screen and (max-width: 1350px) {
   .form-loginwith, 
