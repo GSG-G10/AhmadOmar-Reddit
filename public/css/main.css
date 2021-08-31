@@ -264,6 +264,7 @@ body {
 }
 .main-content .container {
   display: flex;
+  flex-direction: row-reverse;
 }
 .popular-posts {
   width: 68%;
@@ -286,7 +287,7 @@ body {
   border-color: #a9a9a9;
 }
 .post-card .post-vote {
-  width: 20%;
+  width: 8%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -305,6 +306,9 @@ body {
   padding: 6px 0;
   font-size: 14px;
   font-weight: 500;
+}
+.post-content {
+  width: 92%;
 }
 .post-card .post-header {
   padding: 8px;
@@ -435,6 +439,18 @@ body {
 }
 .btt-hidden {
   display: none;
+}
+.up-vote::after, 
+.down-vote::after {
+  font-family: "Font Awesome 5 Free";
+  font-size: 20px;
+  color: #8e949a;
+}
+.up-vote::after {
+  content: "\f35b";
+}
+.down-vote::after {
+  content: "\f358";
 }
 /** Media Query **/
 @media screen and (max-width: 1140px) {
