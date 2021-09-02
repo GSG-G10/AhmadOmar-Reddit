@@ -8,6 +8,7 @@ const authCheck = require('../utils/authCheck');
 const { userDashboard } = require('../controllers');
 const { userPosts } = require('../controllers');
 const { userData } = require('../controllers');
+const { newPost } = require('../controllers');
 
 router.get('/login', (req, res) => {
   res.sendFile(join(__dirname, '..', '..', 'public', 'login.html'));
@@ -17,10 +18,10 @@ router.get('/signup', (req, res) => {
   res.sendFile(join(__dirname, '..', '..', 'public', 'signup.html'));
 });
 
-router.get('/newpost', (req, res) => {
+router.get('/newpost', authCheck, (req, res) => {
   res.sendFile(join(__dirname, '..', '..', 'public', 'newpost.html'));
 });
-
+router.post('/newpost', newPost);
 router.get('/userPosts', userPosts);
 router.get('/userData', userData);
 router.get('/dashboard', authCheck, userDashboard, (req, res) => {

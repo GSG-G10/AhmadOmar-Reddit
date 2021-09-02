@@ -84,8 +84,8 @@
       <section class="newpost">
         <h3 class="newpost-heading">Create a post</h3>
         <div class="newpost-box">
-            <form class="newpost-form">
-              <select class="choose-community">
+            <form class="newpost-form" method="POST" action="/newpost">
+              <select class="choose-community" name="choose_community">
                 <option selected disabled>Choose a community</option>
                 <optgroup label="YOUR PROFILE">
                   <option>u/Ahmad Omar</option>
@@ -100,12 +100,12 @@
               </select>
               <div class="newpost-editor">
 
-              <label for="post-title">Title</label>
-              <input type="text" class="post-title" id="post-title" name="post-title" placeholder="Title">
-              <label for="post-title">Image</label>
-              <input type="text" class="post-image" id="post-image" name="post-image" placeholder="Image URL - e.g. https://i.stack.imgur.com/y9DpT.jpg">
-              <label for="post-text">Text</label>
-              <textarea class="post-text" id="post-text" name="post-text" placeholder="Text (optional)" rows="8"></textarea>
+              <label for="post_title">Title</label>
+              <input type="text" class="post_title" id="post_title" name="post_title" placeholder="Title">
+              <label for="post_image">Image</label>
+              <input type="text" class="post_image" id="post_image" name="post_image" placeholder="Image URL - e.g. https://i.stack.imgur.com/y9DpT.jpg">
+              <label for="post_text">Text</label>
+              <textarea class="post_text" id="post_text" name="post_text" placeholder="Text (optional)" rows="8"></textarea>
               <button typle="submit" class="submit-newpost">POST</button>
             </form>
           </div>
