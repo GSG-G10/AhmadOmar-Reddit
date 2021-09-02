@@ -17,6 +17,10 @@ router.get('/signup', (req, res) => {
   res.sendFile(join(__dirname, '..', '..', 'public', 'signup.html'));
 });
 
+router.get('/newpost', (req, res) => {
+  res.sendFile(join(__dirname, '..', '..', 'public', 'newpost.html'));
+});
+
 router.get('/userPosts', userPosts);
 router.get('/userData', userData);
 router.get('/dashboard', authCheck, userDashboard, (req, res) => {

@@ -137,7 +137,7 @@ body {
 }
 .create-post img {
   width: 30px;
-    padding-top: 5px;
+  padding-top: 5px;
 }
 .get-coins {
   width: 110px;
@@ -304,7 +304,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #F8F9FA;
+  background-color: #f8f9fa;
   padding: 8px 0;
 }
 .post-card .post-vote button {
@@ -329,7 +329,8 @@ body {
 .popular-posts .post-image img {
   width: 100%;
 }
-.post-author, .post-date {
+.post-author,
+.post-date {
   color: #797979;
 }
 .post-card .post-meta {
@@ -354,7 +355,7 @@ body {
   padding-right: 4px;
   font-size: 18px;
 }
-.post-card  .post-comments {
+.post-card .post-comments {
   display: flex;
   align-items: center;
 }
@@ -399,7 +400,6 @@ body {
 .home-widget .home-text {
   display: flex;
   align-items: center;
-
 }
 .home-widget .home-content p {
   font-size: 14px;
@@ -415,7 +415,6 @@ body {
   padding: 6px 0px;
   font-size: 14px;
   font-weight: 600;
-
 }
 .home-btns a:first-child {
   color: #fff;
@@ -453,7 +452,7 @@ body {
 .btt-hidden {
   display: none;
 }
-.up-vote::after, 
+.up-vote::after,
 .down-vote::after {
   font-family: "Font Awesome 5 Free";
   font-size: 20px;
@@ -492,10 +491,9 @@ body {
 .user-widget .user-pic img {
   width: 50px;
 }
-.user-widget .user-name, 
+.user-widget .user-name,
 .user-widget .user-email {
   font-size: 13px;
-
 }
 .user-widget .user-name {
   margin-top: 6px;
@@ -524,16 +522,113 @@ body {
   text-decoration: none;
   border: 1px solid var(--secondaryColor);
   border: 1px solid #ff2700;
-    border-radius: 30px;
-    display: inline-block;
-    width: 95px;
-    text-align: center;
-    padding: 6px 0px;
-    font-size: 14px;
-    font-weight: 600;
-    margin: 0px 6px;
-    color: #ff2700;
-    background-color: #ffffff;
+  border-radius: 30px;
+  display: inline-block;
+  width: 95px;
+  text-align: center;
+  padding: 6px 0px;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0px 6px;
+  color: #ff2700;
+  background-color: #ffffff;
+}
+.newpost-container .container {
+  display: flex;
+  margin-top: 35px;
+}
+.newpost-container .newpost {
+  width: 68%;
+  padding-right: 15px;
+}
+.newpost-heading {
+  font-weight: 500;
+  border-bottom: 1px solid #f5f5f5;
+  padding-bottom: 15px;
+  margin-bottom: 12px;
+}
+.choose-community {
+  height: 38px;
+  border: 1px solid #ececec;
+  border-radius: 4px;
+  padding: 0 12px;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #232323;
+  background-color: #fff;
+  font-weight: 600;
+  width: 250px;
+}
+.choose-community:focus {
+  outline: none;
+  border: 1px solid var(--secondaryColor);
+}
+.choose-community option {
+  height: 35px;
+}
+.newpost-form label {
+  display: none;
+}
+.newpost-editor {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 4px 4px 0 0;
+}
+.newpost-form input,
+.newpost-form textarea {
+  border: 1px solid #ececec;
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #232323;
+}
+.newpost-form input:focus,
+.newpost-form textarea:focus {
+  outline: none;
+}
+.newpost-form input:focus,
+.newpost-form input:hover,
+.newpost-form textarea:focus,
+.newpost-form textarea:hover {
+  border: 1px solid var(--secondaryColor);
+}
+.newpost-form input {
+  height: 38px;
+}
+.submit-newpost {
+  text-decoration: none;
+  border: 1px solid var(--secondaryColor);
+  border-radius: 30px;
+  display: inline-block;
+  width: 68px;
+  padding: 7px 0px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  background-color: var(--secondaryColor);
+  margin-bottom: 10px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+.newpost-footer {
+  background-color: #F6F7F8;
+  height: 80px;
+  border-radius: 0 0 4px 4px;
+  border-top: 1px solid #ececec;
+  display: flex;
+  align-items: center;
+  padding: 0 15px
+}
+.newpost-footer p {
+  font-size: 13px;
+}
+.newpost-footer a {
+  color: #0779d3;
+  font-weight: 500;
+  text-decoration: none;
 }
 /** Media Query **/
 @media screen and (max-width: 1140px) {
@@ -551,6 +646,10 @@ body {
     display: none;
   }
   .popular-posts {
+    width: 100%;
+    padding-left: 15px;
+  }
+  .newpost-container .newpost {
     width: 100%;
     padding-left: 15px;
   }
