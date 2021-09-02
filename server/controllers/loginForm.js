@@ -22,7 +22,7 @@ const loginForm = (req, res, next) => {
                   if (errorrrrrr) {
                     res.status(500).json({ msg: 'internal server error' });
                   } else {
-                    res.cookie('token', token).redirect(301, '/dashboard');
+                    res.cookie('token', token).cookie('is_admin', true).cookie('userName', username).redirect(301, '/');
                   }
                 });
             } else {

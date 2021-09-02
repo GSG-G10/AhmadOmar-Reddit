@@ -51,3 +51,28 @@ fetch('/displayPosts')
     // const postFooter = createElement('div', 'post-footer', postContent);
     // const postComment = createElement('span', 'post-comments', postFooter, 'commentCount');
   }));
+const loginSignupBtns = document.querySelector('.login-signup__btns');
+const userId = document.querySelector('.user-id');
+const userAvatar = document.querySelector('.user-avatar');
+const getCoins = document.querySelector('.get-coins');
+const extraIcons = document.querySelector('.extra-icons');
+const contentFilter = document.querySelector('.content-filter');
+
+if (document.cookie) {
+  loginSignupBtns.classList.toggle('hidden');
+  userId.classList.toggle('hidden');
+  userAvatar.classList.toggle('hidden');
+  getCoins.classList.toggle('hidden');
+  extraIcons.classList.toggle('hidden');
+  contentFilter.classList.toggle('hidden');
+}
+const headerUserName = document.querySelector('.site-header .user-name');
+
+fetch('/userData')
+  .then((response) => response.json())
+  .then((userdata) => {
+    userdata.forEach((user) => {
+      document.title = `${user.username} Dashboard`;
+      headerUserName.textContent = user.username;
+    });
+  });
