@@ -6,7 +6,7 @@ const userPosts = (req, res) => {
   getLoginUser(userName)
     .then((resultt) => resultt.rows[0].id)
     .then((userid) => {
-      console.log(userid);
+      // console.log(userid);
       getUserPosts(userid)
         .then((result) => res.json(result.rows))
         .catch((err) => console.log(err));
