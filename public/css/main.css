@@ -630,6 +630,77 @@ body {
   font-weight: 500;
   text-decoration: none;
 }
+/* single post */
+.community-widget {
+  background-color: #fff;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.community-widget .widget-banner {
+  height: 35px;
+  overflow: hidden;
+}
+.community-widget .widget-banner img {
+  width: 100%;
+}
+.community-name-pic {
+  display: flex;
+  align-items: center;
+}
+.community-widget .community-pic {
+  border: 2px solid #e2e2e2;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #bfe4fc;
+}
+.community-widget .community-pic img {
+  width: 50px;
+}
+.community-widget .community-name {
+  font-size: 16px;
+  margin-top: 6px;
+  display: block;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.community-widget .about-comunity {
+  font-size: 14px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.community-widget .community-members {
+  display: block;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 8px;
+}
+.community-widget .community-members span {
+  display: block;
+  font-size: 13px;
+}
+.community-widget .about-btn {
+  text-decoration: none;
+  border: 1px solid var(--secondaryColor);
+  border-radius: 30px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 6px 0px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--secondaryColor);
+  background-color: #fff;
+  margin-bottom: 10px;
+  display: block;
+}
+.community-widget .widget-bottom {
+  padding: 10px;
+}
 /** Media Query **/
 @media screen and (max-width: 1140px) {
   .extra-icons,
