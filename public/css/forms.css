@@ -15,11 +15,11 @@ body {
   content: url('../assets/images/form-img.png');
 }
 .signup-section .form-image {
-  min-height: 770px;
+  min-height: 705px;
   width: 30%;
 }
 .login-section .form-image {
-  min-height: 605px;
+  min-height: 630px;
 }
 
 .form-section {
@@ -109,6 +109,8 @@ body {
 .form-text {
   font-size: 13px;
   font-weight: 300;
+  width: 85%;
+  line-height: 1.6;
 }
 .form-btn {
   text-decoration: none;
@@ -182,10 +184,13 @@ body {
   line-height: 1.5;
 }
 /** Media query **/
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1366px) {
   .form-loginwith, 
   .form {
     width: auto;
+  }
+  .form-section .form-container {
+    width: 60%;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -205,8 +210,5 @@ body {
   }
 }
 @media screen and (max-width: 650px) {
-  .form-section .form-container {
-    width: 80%;
-  }
   
 }
