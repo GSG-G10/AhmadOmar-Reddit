@@ -295,6 +295,8 @@ body {
   overflow: hidden;
   margin-bottom: 14px;
   cursor: pointer;
+  text-decoration: none;
+  color: inherit;
 }
 .post-card:hover {
   border-color: #a9a9a9;

@@ -6,6 +6,8 @@ const userDashboard = require('./userDashboard');
 const userPosts = require('./userPosts');
 const userData = require('./userData');
 const newPost = require('./newPost');
+const singlePostData = require('./singlePostData');
+const singlePost = require('./singlePost');
 
 module.exports = {
   notFoundError,
@@ -17,4 +19,6 @@ module.exports = {
   userPosts,
   userData,
   newPost,
+  singlePostData,
+  singlePost,
 };

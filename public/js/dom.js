@@ -30,9 +30,10 @@ fetch('/displayPosts')
   .then((result) => result.json())
   .then((resultt) => resultt[0].rows)
   .then((posts) => posts.forEach((post) => {
-    const postCard = createElement('div', 'post-card', postCards);
+    const postCard = createElement('a', 'post-card', postCards);
+    postCard.href = `/post/${post.id}/p`;
     const postVote = createElement('div', 'post-vote', postCard);
-
+    postCard.setAttribute('id', post.id);
     createElement('button', 'up-vote', postVote);
     createElement('span', 'vote-count', postVote, post.votes);
     createElement('button', 'down-vote', postVote);

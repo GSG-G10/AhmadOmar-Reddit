@@ -9,6 +9,8 @@ const { userDashboard } = require('../controllers');
 const { userPosts } = require('../controllers');
 const { userData } = require('../controllers');
 const { newPost } = require('../controllers');
+const { singlePostData } = require('../controllers');
+const { singlePost } = require('../controllers');
 
 router.get('/login', (req, res) => {
   res.sendFile(join(__dirname, '..', '..', 'public', 'login.html'));
@@ -27,6 +29,9 @@ router.get('/userData', userData);
 router.get('/dashboard', authCheck, userDashboard, (req, res) => {
   res.sendFile(join(__dirname, '..', '..', 'public', 'dashboard.html'));
 });
+
+router.get('/post/:postId/', singlePostData);
+router.get('/post/:postId/p', singlePost);
 
 router.get('/displayPosts', displayPosts);
 router.post('/signup', signupFrom);
