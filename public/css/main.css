@@ -140,7 +140,7 @@ body {
   padding-top: 5px;
 }
 .get-coins {
-  width: 110px;
+  width: 140px;
   justify-content: center;
   border: 1px solid #daac45;
   border-radius: 30px;
@@ -763,5 +763,22 @@ body {
   }
   .trending-cards .trending-card {
     width: 100%;
+  }
+  .post-card {
+    flex-direction: column-reverse;
+  }
+  .post-content {
+    width: 100%;
+  }
+  .post-card .post-title {
+    font-size: 16px;
+  }
+  .post-card .post-vote {
+    flex-direction: row;
+    width: fit-content;
+    padding: 8px;
+  }
+  .post-card .post-vote span {
+    padding: 6px 4px;
   }
 }
